@@ -28,7 +28,9 @@ weakQuotes = [
     " You can't truly heal from a loss until you allow yourself to really FEEL the loss.         ",
     "                   I can't shove the dark out of my way.                                    ",
     "                         THERE IS NO LIGHT NO HOPE THERE IS ONLY DESPAIR!!!                 ",
-    " Sleepless Despair!                                                                         "
+    " Sleepless Despair!                                                                         ",
+    "                   Pain is just the Rest from Pain                                          ",
+    "   Physical pain is pure emotion, there are a lot of things we want but afraid to tell it   "
     ]
 
 despairQuote :: IO String
