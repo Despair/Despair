@@ -30,7 +30,8 @@ weakQuotes = [
     "                         THERE IS NO LIGHT NO HOPE THERE IS ONLY DESPAIR!!!                 ",
     " Sleepless Despair!                                                                         ",
     "                   Pain is just the Rest from Pain                                          ",
-    "   Physical pain is pure emotion, there are a lot of things we want but afraid to tell it   "
+    "   Physical pain is pure emotion, there are a lot of things we want but afraid to tell it   ",
+    "                                                       Dzisus, kurwa, ja pierdole!          "
     ]
 
 despairQuote :: IO String
