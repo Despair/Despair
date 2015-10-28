@@ -1,12 +1,17 @@
+{-# LANGUAGE
+    UnicodeSyntax
+  #-}
+
 module Despair
   ( despairQuote
   , despair ) where
 
-import Control.Exception
+import Control.Monad (liftM)
+import Control.Exception (bracket_)
 
 import System.Random (randomRIO)
 
-weakQuotes :: [String]
+weakQuotes ∷ [String]
 weakQuotes = [
     " This is the way the world ends. Not with a bang but a whimper.                             ",
     "             Heaven Conceal                                                                 ",
@@ -34,12 +39,12 @@ weakQuotes = [
     "        Once ,I had a dream... then I woke up                                               "
     ]
 
-despairQuote :: IO String
-despairQuote = randomRIO (0, length weakQuotes - 1) 
-                    >>= return . (weakQuotes !!)
+despairQuote ∷ IO String
+despairQuote = liftM (weakQuotes !!)
+    (randomRIO (0, length weakQuotes - 1))
 
-despair :: IO() -> IO()
-despair = bracket_ ( despairQuote >>= \q ->
+despair ∷ IO () → IO ()
+despair = bracket_ ( despairQuote >>= \q →
                         let cutLen = length $ takeWhile (== ' ') q
                             startQ = drop cutLen q
                         in putStrLn startQ
