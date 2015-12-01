@@ -7,7 +7,7 @@ module Despair
   ( despairQuote
   , despair ) where
 
-import Control.Monad (liftM, replicateM)
+import Control.Monad (liftM)
 import Control.Exception (bracket_)
 
 import System.Random (randomRIO)
