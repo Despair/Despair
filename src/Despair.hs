@@ -31,7 +31,14 @@ weakQuotes = [
     "I can't shove the dark out of my way.", "Pain is just the Rest from Pain",
     "THERE IS NO LIGHT NO HOPE THERE IS ONLY DESPAIR!", "Sleepless Despair!",
     "Physical pain is pure emotion, there are a lot of things we want but afraid to tell it",
-    "Once ,I had a dream... then I woke up"
+    "Once ,I had a dream... then I woke up",
+    "You bring the darkness in my mind, in my life",
+    "You bring the darkness in my heart, the poisoned side",
+    "You bring the darkness in my time, in my light",
+    "You bring the darkness in my words, a nameless rhyme",
+    "And we hear and we cry They shattered our dreaming...",
+    "And I cry out in this Mud And I fear it in the Night And I look up in this All And I feed on this Pain",
+    "Aching and hoping - no Secrets to hide"
     ]
 
 despairQuote ∷ IO String
